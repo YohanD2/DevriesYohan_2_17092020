@@ -10,7 +10,7 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 header{
-  height: 120px;
+  height: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -18,35 +18,32 @@ header{
   width: 92%;
   margin: auto;
   }
-  svg{
-    height: 100%;
-  }
+
   nav{
     display: inline-block;
     height: 100%;
+    width:600px;
+    position: relative;
   }
-  nav ul{
-    margin:0px;
-    height:100%;
+  svg{
+    height: 90px;
   }
-  nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    line-height:120px;
-    height: 100%;
-    margin-right:40px;
-    cursor: pointer;
+  .navContent{
+    display: flex;
+    height:120px;
+    position:absolute;
+    right: 0px;
   }
-  nav ul li:hover{
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
+  .navWidth{
+    height: 90px;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  nav ul li:active{
-    color: #0065FC;
-  }
-  #signup{
-    font-weight: bold;
-    color: #0065FC;
+  .navContent--informations{
+    width:300px;
+    display: flex;
   }
   #content h2{
     margin-top:0px;

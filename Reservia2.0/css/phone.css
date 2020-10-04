@@ -1,3 +1,35 @@
+svg{
+  position: absolute;
+  height:80px;
+  left: 20px;
+}
+nav{
+  height:auto;
+}
+.navWidth{
+  height: auto;
+}
+.navContent{
+  width:100%;
+  flex-wrap: wrap-reverse;
+  position:inherit;
+}
+.navContent--informations{
+  width:100%;
+}
+.navContent--inscription{
+  position:absolute;
+  right: 0;
+  height:80px;
+}
+.navContent--informations__housing, .navContent--informations__activities{
+  width:50%;
+  align-items: flex-end;
+}
+.navContent--informations__activities {
+  border-bottom: 3px solid blue;
+}
+
 #content{
   width:auto;
   margin: auto;
@@ -6,6 +38,7 @@
 #description{
   width:90%;
   margin:auto;
+  margin-top:30px;
 }
 
 #searchIconLoc{
@@ -88,8 +121,8 @@
   padding-right:0;
 }
 #popularHeader{
-  padding-left: 30px;
-  padding-right:30px;
+  padding-left: 20px;
+  padding-right:20px;
   margin-bottom:15px;
 }
 #popularHeader h2{
@@ -97,15 +130,19 @@
 }
 
 #popularContent{
-  padding-left:30px;
-  padding-right:30px;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 #search{
-  width: 90%;
-  margin: auto;
+  margin:0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+#countryHousing {
+  padding:20px;
+}
 #countryHousingRow1, #countryHousingRow2{
   flex-direction: column;
 }
@@ -146,7 +183,7 @@
 }
 #countryActivities{
   margin: 0px;
-  padding: 30px;
+  padding: 20px;
 }
 
 #countryActivities h2{
@@ -179,7 +216,7 @@
   padding: 0px;
 }
 footer{
-  padding:30px;
+  padding:20px;
 }
 #contentFooter{
   flex-direction: column;
