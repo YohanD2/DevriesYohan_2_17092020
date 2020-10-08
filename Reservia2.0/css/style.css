@@ -13,6 +13,7 @@ header{
   height: auto;
   display: flex;
   justify-content: space-between;
+  height:120px;
 }
 #content{
   width: 92%;
@@ -26,7 +27,7 @@ header{
     position: relative;
   }
   svg{
-    height: 90px;
+    height: 100%;
   }
   .navContent{
     display: flex;
@@ -34,8 +35,26 @@ header{
     position:absolute;
     right: 0px;
   }
+
+  .navContent--informations__housing, .navContent--informations__activities, .navContent--inscription {
+    border-top: 2px solid rgba(0, 0, 0, 0);
+
+  }
+  .navContent--informations__housing:hover, .navContent--informations__activities:hover, .navContent--inscription:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+  }
+  .selected{
+    border-top: 2px solid #0065FC;
+    color : #0065FC;
+
+  }
+  .navContent--inscription{
+    color : #0065FC;
+    font-weight: bold;
+  }
   .navWidth{
-    height: 90px;
+    height: 100%;
     width:150px;
     display: flex;
     justify-content: center;
@@ -61,25 +80,29 @@ header{
   #description p{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
 
   #form{
     display: flex;
   }
+
+  .fa-map-marker-alt{
+    font-size: 22px;
+  }
   #searchIconLoc{
-    height:45px;
-    width:45px;
+    height:60px;
+    width:60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 12px 12px;
-    border-bottom-left-radius: 12px 12px;
+    border-top-left-radius: 17px 17px;
+    border-bottom-left-radius: 17px 17px;
     background: #F2F2F2;
   }
   #form input[type=text]{
-    height:41px;
+    height:56px;
     border: 1px solid #F2F2F2;
     border-left:none;
     border-right:none;
@@ -89,16 +112,16 @@ header{
   }
   #form input[type=text]::placeholder{
     opacity:1;
-    font-size:16px;
+    font-size:18px;
     font-weight: bold;
   }
   #searchBtn{
     border:none;
     background: #0065FC;
     color: white;
-    border-top-right-radius: 12px 12px;
-    border-bottom-right-radius: 12px 12px;
-    font-size:16px;
+    border-top-right-radius: 17px 17px;
+    border-bottom-right-radius: 17px 17px;
+    font-size:18px;
     font-weight: bold;
     padding-left:15px;
     padding-right:15px;
@@ -126,9 +149,9 @@ font-weight: bold;
 
 
   .filter{
-    height: 40px;
+    height: 50px;
 border: 2px solid #F2F2F2;
-border-radius: 20px;
+border-radius: 50px;
 display: inline-block;
 box-sizing: border-box;
 position: relative;
@@ -142,8 +165,8 @@ cursor: pointer;
     background :#DEEBFF;
   }
   .filterIcon{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background: #DEEBFF;
     display: flex;
@@ -160,15 +183,17 @@ cursor: pointer;
 
   .filter p{
     display: inline-block;
-    line-height: 37px;
+    line-height: 50px;
     margin: 0px;
-    padding-left: 51px;
+    padding-left: 65px;
     padding-right: 20px;
+    font-size: 18px;
   }
 
   #numberInformation{
     display: flex;
     margin-bottom: 30px;
+    margin-top:15px;
   }
   #numberInformation p{
     margin:0;
@@ -189,7 +214,7 @@ cursor: pointer;
     font-size:8px;
   }
 
-#row2{
+#housing{
 display:flex;
 justify-content: space-between;
 }
@@ -266,6 +291,9 @@ justify-content: space-between;
     font-size:12px;
   }
 
+  #more span{
+    font-weight: bold;
+  }
   #popular{
     width:30%;
     padding:30px;
@@ -330,7 +358,7 @@ justify-content: space-between;
   #countryActivitiesContent{
     display:flex;
     justify-content: space-between;
-    height:600px;
+    height:500px;
   }
 .columnActivities {
   width:50%;
@@ -353,6 +381,7 @@ justify-content: space-between;
     margin: 0px;
     margin-left: 19px;
     line-height: 60px;
+    font-size: 15px;
   }
   .card2{
     box-shadow: 1px 1px 12px #d7d7d7;
@@ -376,22 +405,22 @@ justify-content: space-between;
   }
 
   .custom2 {
-    height:350px;
-    margin-bottom: 40px;
+    height:55%;
+    margin-bottom: 10%;
   }
 
   .custom3{
-    height:200px;
+    height:35%;
   }
 
   .custom5 {
-    height:250px;
-    margin-bottom: 40px;
+    height:40%;
+    margin-bottom: 10%;
 
   }
 
   .custom6{
-    height:300px;
+    height:50%;
   }
 
   .custom1 img, .custom4 img{

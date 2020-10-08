@@ -5,6 +5,7 @@ svg{
 }
 nav{
   height:auto;
+  width:100%;
 }
 .navWidth{
   height: auto;
@@ -54,7 +55,7 @@ nav{
 }
 
 #searchIconLoc{
-  flex: 0 0 60px;
+  flex: 0 0 50px;
 }
 
 #form input[type=text]{
@@ -71,7 +72,7 @@ nav{
   padding-left:15px;
   padding-right:15px;
   border-radius:12px;
-  width:60px;
+  width:50px;
   margin-left: -12px;
 }
 
@@ -103,7 +104,6 @@ nav{
 .filter p{
   line-height: 40px;
   padding-left: 52px;
-  font-size: 14px;
 }
 #numberInformation{
   width: 90%;
@@ -124,7 +124,7 @@ nav{
   font-size: 22px;
   margin-top: 20px;
   margin-bottom:10px;
-
+  text-align: center;
 }
 #popular{
   border-radius: 0px;
@@ -134,8 +134,8 @@ nav{
   padding-right:0;
 }
 #popularHeader{
-  padding-left: 20px;
-  padding-right:20px;
+  padding-left: 10%;
+  padding-right:10%;
   margin-bottom:15px;
 }
 #popularHeader h2{
@@ -143,8 +143,8 @@ nav{
 }
 
 #popularContent{
-  padding-left:20px;
-  padding-right:20px;
+  padding-left:10%;
+  padding-right:10%;
 }
 
 #search{
@@ -154,7 +154,7 @@ nav{
 }
 
 #countryHousing {
-  padding:20px;
+  padding:20px 20% 20px 20%;
 }
 #countryHousingRow1, #countryHousingRow2{
   flex-direction: column;
@@ -197,12 +197,13 @@ nav{
 }
 #countryActivities{
   margin: 0px;
-  padding: 20px;
+  padding: 20px 20% 20px 20%;
   padding-bottom:30px;
 }
 
 #countryActivities h2{
   font-size: 22px;
+  text-align: center;
 }
 
 #countryActivitiesContent{
@@ -236,6 +237,7 @@ footer{
 #contentFooter{
   flex-direction: column;
   margin:0px;
+  text-align: center;
 }
 .ulFooter{
   width:100%;

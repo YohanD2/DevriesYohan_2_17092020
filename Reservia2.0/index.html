@@ -4,8 +4,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
       <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/phone.css" />
-      <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="css/pad.css" />
+
+      <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/phone.css" />
+      <link rel="stylesheet" media="screen and (min-width: 401px) and (max-width: 767px)" href="css/sm.css" />
+
+      <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1030px)" href="css/pad.css" />
+      <link rel="stylesheet" media="screen and (min-width: 1031px) and (max-width: 1350px)" href="css/md.css" />
+
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Reservia</title>
@@ -19,16 +24,16 @@
         <nav>
           <div class="navContent" >
             <div class="navContent--informations">
-              <div class="navContent--informations__housing navWidth" >
-                <p>Hebergement</p>
-              </div>
-              <div class="navContent--informations__activities navWidth">
+              <a href="#countryHousing" class="navContent--informations__housing navWidth selected" >
+                <p>Hébergements</p>
+              </a>
+              <a href="#countryActivities" class="navContent--informations__activities navWidth">
                 <p>Activités</p>
-              </div>
+              </a>
             </div>
-            <div class="navContent--inscription navWidth">
-              <p>Inscription</p>
-            </div>
+            <a href="#"class="navContent--inscription navWidth">
+              <p>S'inscrire</p>
+            </a>
           </div>
         </nav>
       </header>
@@ -55,7 +60,7 @@
             <div class="filterIcon">
               <i class="fas fa-money-bill-wave"></i>
             </div>
-            <p>Economique</p>
+            <p>Économique</p>
           </div>
           <div class="filter">
             <div class="filterIcon">
@@ -83,12 +88,12 @@
         </div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-    <div id="row2">
+    <div id="housing">
       <section id="countryHousing">
-        <h2>Hébergement à Marseille</h2>
+        <h2>Hébergements à Marseille</h2>
         <div id="countryHousingRow1">
           <a class="card">
-            <img src="images/auberge_la_cannebiere.jpg" alt="Photo de l'Auberge la Cannebière">
+            <img src="images/housing/auberge_la_cannebiere.jpg" alt="Photo de l'Auberge la Cannebière">
             <div class="cardContent">
               <h3>Auberge la Cannebière</h3>
               <p>Nuit à partir de <span>25€</span></p>
@@ -102,7 +107,7 @@
             </div>
           </a>
           <a class="card">
-            <img src="images/hotel_du_port.jpg" alt="Photo de l'Hôtel du port">
+            <img src="images/housing/hotel_du_port.jpg" alt="Photo de l'Hôtel du port">
             <div class="cardContent">
               <h3>Hôtel du port</h3>
               <p>Nuit à partir de <span>52€</span></p>
@@ -116,7 +121,7 @@
             </div>
           </a>
           <a class="card">
-            <img src="images/hotel_les_mouettes.jpg" alt="Photo de l'Hôtel Les mouettes">
+            <img src="images/housing/hotel_les_mouettes.jpg" alt="Photo de l'Hôtel Les mouettes">
             <div class="cardContent">
               <h3>Hôtel Les mouettes</h3>
               <p>Nuit à partir de <span>76€</span></p>
@@ -132,21 +137,21 @@
         </div>
         <div id="countryHousingRow2">
           <a class="card">
-            <img src="images/hotel_de_la_mer.jpg" alt="Photo de l'Hôtel de la mer">
+            <img src="images/housing/hotel_de_la_mer.jpg" alt="Photo de l'Hôtel de la mer">
             <div class="cardContent">
               <h3>Hôtel de la mer</h3>
               <p>Nuit à partir de <span>46€</span></p>
               <div class="stars">
                 <i class="fas fa-star blue"></i>
                 <i class="fas fa-star blue"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star blue"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
             </div>
           </a>
           <a class="card">
-            <img src="images/auberge_le_panier.jpg" alt="Photo de l'Auberge Le Panier">
+            <img src="images/housing/auberge_le_panier.jpg" alt="Photo de l'Auberge Le Panier">
             <div class="cardContent">
               <h3>Auberge Le Panier</h3>
               <p>Nuit à partir de <span>23€</span></p>
@@ -160,7 +165,7 @@
             </div>
           </a>
           <a class="card">
-            <img src="images/hotel_chez_amina.jpg" alt="Photo de l'Hôtel chez Amina">
+            <img src="images/housing/hotel_chez_amina.jpg" alt="Photo de l'Hôtel chez Amina">
             <div class="cardContent">
               <h3>Hôtel chez Amina</h3>
               <p>Nuit à partir de <span>96€</span></p>
@@ -186,9 +191,9 @@
         </div>
         <div id="popularContent">
           <a class="card1">
-            <img src="images/hotel_du_soleil_matin.jpg" alt="Photo de l'Hôtel du soleil matin">
+            <img src="images/popular/hotel_le_soleil_du_matin.jpg" alt="Photo de l'Hôtel Le soleil du matin">
            <div class="card1Content">
-             <h3>Hôtel du soleil matin</h3>
+             <h3>Hôtel Le soleil du matin</h3>
              <p>Nuit à partir de <span>25€</span></p>
              <div class="stars stars--card1">
                <i class="fas fa-star blue"></i>
@@ -200,7 +205,7 @@
            </div>
           </a>
           <a class="card1">
-            <img src="images/au_coeur_de_leau_chambre_dhotes.jpg" alt="Photo de Au coeur de l'eau Chambre d'hôtes">
+            <img src="images/popular/au_coeur_de_leau_chambre_dhotes.jpg" alt="Photo de Au coeur de l'eau Chambre d'hôtes">
             <div class="card1Content">
               <h3>Au coeur de l'eau Chambre d'hôtes</h3>
               <p>Nuit à partir de <span>25€</span></p>
@@ -214,7 +219,7 @@
             </div>
           </a>
           <a class="card1">
-            <img src="images/hotel_tout_bleu_et_blanc.jpg" alt="Photo de l'Hôtel Tout bleu et Blanc">
+            <img src="images/popular/hotel_tout_bleu_et_blanc.jpg" alt="Photo de l'Hôtel Tout bleu et Blanc">
             <div class="card1Content">
               <h3>Hôtel Tout bleu et Blanc</h3>
               <p>Nuit à partir de <span>25€</span></p>
@@ -233,40 +238,40 @@
 
 
       <section id="countryActivities">
-        <h2>Activitées à Marseille</h2>
+        <h2>Activités à Marseille</h2>
         <div id="countryActivitiesContent">
           <div class="columnActivities columnActivities__padding">
             <div class="column">
               <a class='card2 custom1'>
-                <img src="images/vieux_port.jpg" alt="Photo du Vieux Port">
+                <img src="images/activities/vieux_port.jpg" alt="Photo du Vieux Port">
                 <h3>Vieux Port</h3>
               </a>
             </div>
             <div class="column">
               <a class='card2 custom2'>
-                <img src="images/fort_de_pomegues.jpg" alt="Photo du Fort de Pomègues">
+                <img src="images/activities/fort_de_pomegues.jpg" alt="Photo du Fort de Pomègues">
                 <h3>Fort de Pomègues</h3>
               </a>
               <a class='card2 custom3'>
-                <img src="images/iles_du_frioul.jpg" alt="Photo des Iles du Frioul">
-                <h3>Iles du Frioul</h3>
+                <img src="images/activities/iles_du_frioul.jpg" alt="Photo des Iles du Frioul">
+                <h3>Îles du Frioul</h3>
               </a>
             </div>
           </div>
           <div class="columnActivities">
             <div class="column">
               <a class='card2 custom4'>
-                <img src="images/parc_national_des_calanques.jpg" alt="Photo du Parc National des Calanques">
+                <img src="images/activities/parc_national_des_calanques.jpg" alt="Photo du Parc National des Calanques">
                 <h3>Parc National des Calanques</h3>
               </a>
             </div>
             <div class="column">
               <a class='card2 custom5'>
-                <img src="images/notre-dame-de-la-garde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
+                <img src="images/activities/notre-dame-de-la-garde.jpg" alt="Photo de Notre-Dame-de-la-Garde">
                 <h3>Notre-Dame-de-la-Garde</h3>
               </a>
               <a class='card2 custom6'>
-                <img src="images/parc_longchamp.jpg" alt="Photo du Parc Longchamp">
+                <img src="images/activities/parc_longchamp.jpg" alt="Photo du Parc Longchamp">
                 <h3>Parc Longchamp</h3>
               </a>
             </div>
@@ -282,16 +287,16 @@
             <ul>
               <li><a href="#">Fonctionnement du site</a></li>
               <li><a href="#">Conditions générales de vente</a></li>
-              <li><a href="#">Données et confidentialité</li>
+              <li><a href="#">Données et confidentialité</a></li>
             </ul>
           </div>
           <div class="ulFooter">
-          <h4>Nos hébergements</h4>
-          <ul>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-          </ul>
-        </div>
+            <h4>Nos hébergements</h4>
+            <ul>
+              <li><a href="#">Charte qualité</a></li>
+              <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+          </div>
           <div class="ulFooter">
             <h4>Assistance</h4>
             <ul>
