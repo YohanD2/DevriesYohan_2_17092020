@@ -1,37 +1,48 @@
-#housing{
-  flex-direction: column;
+#housing
+{
+	flex-direction: column;
 }
 
-#countryHousing {
-  width:auto;
+#countryHousing
+{
+	width: auto;
 }
 
-#countryHousingRow1, #countryHousingRow2{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-#popular {
-  width: auto;
-  margin-left: auto;
-  margin-top:30px;
+#countryHousingRow1, #countryHousingRow2
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-#popularContent{
-  flex-direction: row;
-  justify-content: space-between;
+#popular
+{
+	width: auto;
+	margin-left: auto;
+	margin-top: 30px;
 }
 
-.card1{
-  flex: 0 0 31%;
+#popularContent
+{
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.card1 h3{
-  font-size: 16px;
-}
-.card1 p{
-  font-size: 14px;
+.card1
+{
+	flex: 0 0 31%;
 }
 
-.card2 h3{
-  font-size: 13px;
+.card1 h3
+{
+	font-size: 16px;
+}
+
+.card1 p
+{
+	font-size: 14px;
+}
+
+.card2 h3
+{
+	font-size: 13px;
 }
