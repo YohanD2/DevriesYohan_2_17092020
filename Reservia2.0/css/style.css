@@ -429,6 +429,7 @@ nav
 .card1 img
 {
 	width: 140px;
+	min-width: 140px;
 	height: 145px;
 	border-top-left-radius: 12px 12px;
 	border-bottom-left-radius: 12px 12px;
